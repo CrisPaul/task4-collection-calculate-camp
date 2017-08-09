@@ -1,8 +1,14 @@
 'use strict';
 
 function amount_even(collection) {
+  var sum=0;
+  collection.forEach(function(elem){
+    if(elem % 2 == 0){
+      sum += elem;
+    }
+  })
+  return sum;
 
-  //在这里写入代码
 }
 
 module.exports = amount_even;

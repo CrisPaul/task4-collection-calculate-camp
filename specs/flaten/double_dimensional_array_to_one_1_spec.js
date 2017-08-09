@@ -13,3 +13,8 @@ describe('double_to_one', function() {
     expect(result).toEqual([1, 2, 3, 4]);
   })
 });
+
+
+var arr = [1,[2],[3,4]];
+var str = arr.toString();
+console.log(str);

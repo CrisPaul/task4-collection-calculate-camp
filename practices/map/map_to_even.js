@@ -1,5 +1,10 @@
 'use strict';
 function map_to_even(collection){
-  return [2,4,6,8,10];
+  var resCollection = [];
+  function double(elem){
+    return elem*2;
+  }
+  resCollection = collection.map(double);
+  return resCollection;
 }
 module.exports = map_to_even;

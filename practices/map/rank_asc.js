@@ -1,6 +1,10 @@
 'use strict';
 var rank_asc = function(collection){
-  return [6,5,4,3,2];
+  var resCollection  = new Array();
+  var objArray = collection.sort();
+  resCollection = objArray.reverse();
+
+  return resCollection;
 };
 
 module.exports = rank_asc;

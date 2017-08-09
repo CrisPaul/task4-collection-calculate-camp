@@ -1,8 +1,11 @@
 'use strict';
 
 function choose_no_repeat_number(collection) {
-
-  //在这里写入代码
+    var resCollection = [];
+    resCollection = collection.filter(function(elem,index,arr){
+      return arr[index] !== arr[index+1];
+    })
+    return resCollection;
 }
 
 module.exports = choose_no_repeat_number;
